@@ -4,4 +4,8 @@
 [mywebservers]
 172.31.29.156
 172.31.18.22
- 
+
+[mywebservers: vars]
+myvar=value
+mywebpackonubuntu=apache2
+mywebpackonredhat=httpd
