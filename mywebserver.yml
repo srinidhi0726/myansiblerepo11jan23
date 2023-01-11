@@ -1,6 +1,5 @@
 ---
-- hosts: myhosts
-  become: yes
+- hosts: all
   tasks: 
   - name: i want to webserver
     apt:
