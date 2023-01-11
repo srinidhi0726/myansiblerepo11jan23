@@ -1,0 +1,12 @@
+---
+- mystudents:
+  - name: sri
+    phno: 9182522169
+    address: avg
+  - name: nidhi
+    phno: 875643324
+    address: 
+    - street: 2
+      drno: 21/3
+      pincode: 521121
+
