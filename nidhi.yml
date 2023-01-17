@@ -1,0 +1,17 @@
+---
+- hosts: localhost
+  become: yes
+  tasks: 
+    - name: install nodes
+      ec2:
+         key_name: mykeypair7jan23
+         instance_type: t2.micro
+         image: ami-06d98b326a744dfc1
+         wait: yes
+         group: sg-0caa1fe4a9810e26e
+         count: 1
+         vpc_subnet_id: subnet-03f731d4616296d86245
+         assign_public_ip: yes
+         region: us-west-2
+         instance_tags:
+             Name: nidhi_server
